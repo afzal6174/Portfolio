@@ -1,0 +1,83 @@
+header,
+footer {
+    background: var(--background-1);
+}
+
+main {
+    background: var(--background-2);
+}
+
+main * {
+    background-color: transparent;
+}
+
+/* section  */
+
+section>h2:first-child {
+    margin-bottom: 2rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+
+.right {
+    align-self: end;
+}
+
+/* image */
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+
+
+/* list */
+ol,
+ul {
+    padding-left: 2rem;
+}
+
+ol,
+ul,
+dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0;
+}
+
+fieldset,
+legend,
+input,
+button,
+select,
+optgroup,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+}
+
+
+
+button:not(:disabled),
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled) {
+    cursor: pointer;
+}

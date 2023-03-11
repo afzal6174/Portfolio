@@ -1,0 +1,2445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/megazine.css" />
+    <title>Document</title>
+</head>
+<body>
+    <aside id="sidebar-quicklinks" class="sidebar" data-macro="CSSRef"><button type="button"
+            class="button action backdrop" aria-label="Collapse sidebar"><span class="button-wrap"></span></button>
+
+        <nav aria-label="Related Topics" class="sidebar-inner">
+            <div class="in-nav-toc">
+                <div class="document-toc-container">
+                    <section class="document-toc">
+                        <header>
+                            <h2 class="document-toc-heading">In this article</h2>
+                        </header>
+                        <ul class="document-toc-list">
+                            <li class="document-toc-item "><a class="document-toc-link" href="#try_it">Try it</a></li>
+                            <li class="document-toc-item "><a class="document-toc-link"
+                                    href="#constituent_properties">Constituent properties</a></li>
+                            <li class="document-toc-item "><a class="document-toc-link" href="#syntax">Syntax</a></li>
+                            <li class="document-toc-item "><a class="document-toc-link"
+                                    href="#description">Description</a></li>
+                            <li class="document-toc-item "><a class="document-toc-link" href="#formal_definition">Formal
+                                    definition</a></li>
+                            <li class="document-toc-item "><a class="document-toc-link" href="#formal_syntax">Formal
+                                    syntax</a></li>
+                            <li class="document-toc-item "><a class="document-toc-link" href="#examples">Examples</a>
+                            </li>
+                            <li class="document-toc-item "><a class="document-toc-link"
+                                    href="#specifications">Specifications</a></li>
+                            <li class="document-toc-item "><a class="document-toc-link" href="#browser_compatibility"
+                                    aria-current="true">Browser compatibility</a></li>
+                            <li class="document-toc-item "><a class="document-toc-link" href="#see_also">See also</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+            <div>
+                <ol>
+                    <li><a href="/en-US/docs/Web/CSS"><strong>CSS</strong></a></li>
+                    <li><a href="/en-US/docs/Learn/CSS"><strong>Tutorials</strong></a></li>
+                    <li><a href="/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">CSS basics</a></li>
+                    <li class="toggle">
+                        <details>
+                            <summary>CSS first steps</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Learn/CSS/First_steps">CSS first steps overview</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/First_steps/What_is_CSS">What is CSS?</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/First_steps/Getting_started">Getting started with
+                                        CSS</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured">How CSS is
+                                        structured</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/First_steps/How_CSS_works">How CSS works</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/First_steps/Styling_a_biography_page">Assessment:
+                                        Styling a biography page</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>CSS building blocks</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks">CSS building blocks overview</a>
+                                </li>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks/Selectors">CSS selectors</a></li>
+                                <li><a
+                                        href="/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors">Type,
+                                        class, and ID selectors</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors">Attribute
+                                        selectors</a></li>
+                                <li><a
+                                        href="/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements">Pseudo-classes
+                                        and pseudo-elements</a></li>
+                                <li><a
+                                        href="/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators">Combinators</a>
+                                </li>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance">Cascade,
+                                        specificity, and inheritance</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks/Cascade_layers">Cascade layers</a>
+                                </li>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks/The_box_model">The box model</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders">Backgrounds
+                                        and borders</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks/Handling_different_text_directions">Handling
+                                        different text directions</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content">Overflowing
+                                        content</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">CSS values and
+                                        units</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS">Sizing items in
+                                        CSS</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements">Images,
+                                        media, and form elements</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks/Styling_tables">Styling tables</a>
+                                </li>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS">Debugging CSS</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks/Organizing">Organizing your CSS</a>
+                                </li>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks/Fundamental_CSS_comprehension">Assessment:
+                                        Fundamental CSS comprehension</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks/Creating_fancy_letterheaded_paper">Assessment:
+                                        Creating fancy letterheaded paper</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/Building_blocks/A_cool_looking_box">Assessment: A
+                                        cool-looking box</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Styling text</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Learn/CSS/Styling_text">Styling text overview</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/Styling_text/Fundamentals">Fundamental text and font
+                                        styling</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/Styling_text/Styling_lists">Styling lists</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/Styling_text/Styling_links">Styling links</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/Styling_text/Web_fonts">Web fonts</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/Styling_text/Typesetting_a_homepage">Assessment:
+                                        Typesetting a community school homepage</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>CSS layout</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Learn/CSS/CSS_layout">CSS layout overview</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/CSS_layout/Introduction">Introduction to CSS
+                                        layout</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow">Normal Flow</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/CSS_layout/Flexbox">Flexbox</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/CSS_layout/Grids">Grids</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/CSS_layout/Floats">Floats</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/CSS_layout/Positioning">Positioning</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/CSS_layout/Multiple-column_Layout">Multiple-column
+                                        layout</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design">Responsive design</a>
+                                </li>
+                                <li><a href="/en-US/docs/Learn/CSS/CSS_layout/Media_queries">Beginner's guide to media
+                                        queries</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods">Legacy layout
+                                        methods</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers">Supporting
+                                        older browsers</a></li>
+                                <li><a href="/en-US/docs/Learn/CSS/CSS_layout/Fundamental_Layout_Comprehension">Assessment:
+                                        Fundamental layout comprehension</a></li>
+                            </ol>
+                        </details>
+                    </li>
+
+                    <li><a href="/en-US/docs/Web/CSS/Reference"><strong>Reference</strong></a></li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Modules</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/Compositing_and_Blending">CSS compositing and
+                                        blending</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Animations">CSS animations</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders">CSS backgrounds and
+                                        borders</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Basic_User_Interface">CSS Basic User Interface</a>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Box_Alignment">CSS Box Alignment</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Box_Model">CSS Box Model</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Charsets">CSS Charsets</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Colors">CSS Colors</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Columns">CSS Multi-column Layout</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Conditional_Rules">CSS Conditional Rules</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Containment">CSS Containment</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Counter_Styles">CSS Counter Styles</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Display">CSS Display</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout">CSS Flexible Box Layout</a>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Fonts">CSS Fonts</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Fragmentation">CSS Fragmentation</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Generated_Content">CSS Generated Content</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Grid_Layout">CSS Grid Layout</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Images">CSS Images</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Lists_and_Counters">CSS Lists</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Logical_Properties">CSS Logical Properties and
+                                        Values</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Masking">CSS Masking</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Miscellaneous">CSS Miscellaneous</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Motion_Path">CSS Motion Path</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Namespaces">CSS Namespaces</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Overflow">CSS Overflow</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Pages">CSS Paged Media</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Positioning">CSS Positioned Layout</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Ruby">CSS Ruby Layout</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Scroll_Snap">CSS Scroll Snap</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Scroll_Snap_Points">CSS Scroll Snap Points</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Scrollbars">CSS Scrollbars</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Shapes">CSS Shapes</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Table">CSS Table</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Text">CSS Text</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Text_Decoration">CSS Text Decoration</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Transforms">CSS Transforms</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Transitions">CSS Transitions</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Variables">CSS Custom Properties for Cascading
+                                        Variables</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Writing_Modes">CSS Writing Modes</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSSOM_View">CSSOM View</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/Filter_Effects">CSS filter effects</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/Media_Queries">Media queries</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/Paged_Media">Paged media</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details open="">
+                            <summary>Properties</summary>
+                            <ol>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>-moz-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/-moz-float-edge">-moz-float-edge</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-moz-force-broken-image-icon">-moz-force-broken-image-icon</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-moz-image-region">-moz-image-region</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/-moz-orient">-moz-orient</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-moz-outline-radius">-moz-outline-radius</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-moz-outline-radius-bottomleft">-moz-outline-radius-bottomleft</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-moz-outline-radius-bottomright">-moz-outline-radius-bottomright</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-moz-outline-radius-topleft">-moz-outline-radius-topleft</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-moz-outline-radius-topright">-moz-outline-radius-topright</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/-moz-user-focus">-moz-user-focus</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/-moz-user-input">-moz-user-input</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>-webkit-*</summary>
+                                        <ol>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-webkit-border-before">-webkit-border-before</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-webkit-box-reflect">-webkit-box-reflect</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/-webkit-line-clamp">-webkit-line-clamp</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-webkit-mask-attachment">-webkit-mask-attachment</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-webkit-mask-box-image">-webkit-mask-box-image</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-webkit-mask-composite">-webkit-mask-composite</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-webkit-mask-position-x">-webkit-mask-position-x</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-webkit-mask-position-y">-webkit-mask-position-y</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-webkit-mask-repeat-x">-webkit-mask-repeat-x</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-webkit-mask-repeat-y">-webkit-mask-repeat-y</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-webkit-overflow-scrolling">-webkit-overflow-scrolling</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-webkit-tap-highlight-color">-webkit-tap-highlight-color</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-webkit-text-fill-color">-webkit-text-fill-color</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-webkit-text-security">-webkit-text-security</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-webkit-text-stroke">-webkit-text-stroke</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-webkit-text-stroke-color">-webkit-text-stroke-color</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-webkit-text-stroke-width">-webkit-text-stroke-width</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/-webkit-touch-callout">-webkit-touch-callout</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/accent-color">accent-color</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>align-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/align-content">align-content</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/align-items">align-items</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/align-self">align-self</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/align-tracks">align-tracks</a><abbr
+                                                    class="icon icon-experimental"
+                                                    title="Experimental. Expect behavior to change in the future.">
+                                                    <span class="visually-hidden">Experimental</span>
+                                                </abbr></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/all">all</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>animation-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/animation">animation</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/animation-composition">animation-composition</a><abbr
+                                                    class="icon icon-experimental"
+                                                    title="Experimental. Expect behavior to change in the future.">
+                                                    <span class="visually-hidden">Experimental</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/animation-delay">animation-delay</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/animation-direction">animation-direction</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/animation-duration">animation-duration</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/animation-fill-mode">animation-fill-mode</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/animation-iteration-count">animation-iteration-count</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/animation-name">animation-name</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/animation-play-state">animation-play-state</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/animation-timeline">animation-timeline</a><abbr
+                                                    class="icon icon-experimental"
+                                                    title="Experimental. Expect behavior to change in the future.">
+                                                    <span class="visually-hidden">Experimental</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/animation-timing-function">animation-timing-function</a>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/appearance">appearance</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/aspect-ratio">aspect-ratio</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/backdrop-filter">backdrop-filter</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/backface-visibility">backface-visibility</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>background-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/background">background</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/background-attachment">background-attachment</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/background-blend-mode">background-blend-mode</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/background-clip">background-clip</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/background-color">background-color</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/background-image">background-image</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/background-origin">background-origin</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/background-position">background-position</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/background-position-x">background-position-x</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/background-position-y">background-position-y</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/background-repeat">background-repeat</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/background-size">background-size</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/block-size">block-size</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>border-*</summary>
+                                        <ol>
+                                            <li><em><a href="/en-US/docs/Web/CSS/border"
+                                                        aria-current="page">border</a></em></li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-block">border-block</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-block-color">border-block-color</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-block-end">border-block-end</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-block-end-color">border-block-end-color</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-block-end-style">border-block-end-style</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-block-end-width">border-block-end-width</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-block-start">border-block-start</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-block-start-color">border-block-start-color</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-block-start-style">border-block-start-style</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-block-start-width">border-block-start-width</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-block-style">border-block-style</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-block-width">border-block-width</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-bottom">border-bottom</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-bottom-color">border-bottom-color</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-bottom-left-radius">border-bottom-left-radius</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-bottom-right-radius">border-bottom-right-radius</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-bottom-style">border-bottom-style</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-bottom-width">border-bottom-width</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-collapse">border-collapse</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-color">border-color</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-end-end-radius">border-end-end-radius</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-end-start-radius">border-end-start-radius</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-image">border-image</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-image-outset">border-image-outset</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-image-repeat">border-image-repeat</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-image-slice">border-image-slice</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-image-source">border-image-source</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-image-width">border-image-width</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-inline">border-inline</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-inline-color">border-inline-color</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-inline-end">border-inline-end</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-inline-end-color">border-inline-end-color</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-inline-end-style">border-inline-end-style</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-inline-end-width">border-inline-end-width</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-inline-start">border-inline-start</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-inline-start-color">border-inline-start-color</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-inline-start-style">border-inline-start-style</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-inline-start-width">border-inline-start-width</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-inline-style">border-inline-style</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-inline-width">border-inline-width</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-left">border-left</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-left-color">border-left-color</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-left-style">border-left-style</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-left-width">border-left-width</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-radius">border-radius</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-right">border-right</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-right-color">border-right-color</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-right-style">border-right-style</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-right-width">border-right-width</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-spacing">border-spacing</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-start-end-radius">border-start-end-radius</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-start-start-radius">border-start-start-radius</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-style">border-style</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-top">border-top</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-top-color">border-top-color</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-top-left-radius">border-top-left-radius</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/border-top-right-radius">border-top-right-radius</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-top-style">border-top-style</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-top-width">border-top-width</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/border-width">border-width</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/bottom">bottom</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>box-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/box-align">box-align</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/box-decoration-break">box-decoration-break</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/box-direction">box-direction</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/box-flex">box-flex</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/box-flex-group">box-flex-group</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/box-lines">box-lines</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/box-ordinal-group">box-ordinal-group</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/box-orient">box-orient</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/box-pack">box-pack</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/box-shadow">box-shadow</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/box-sizing">box-sizing</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>break-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/break-after">break-after</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/break-before">break-before</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/break-inside">break-inside</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/caption-side">caption-side</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/caret-color">caret-color</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/clear">clear</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/clip">clip</a><abbr class="icon icon-deprecated"
+                                        title="Deprecated. Not for use in new websites.">
+                                        <span class="visually-hidden">Deprecated</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/clip-path">clip-path</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/color">color</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/color-scheme">color-scheme</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>column-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/column-count">column-count</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/column-fill">column-fill</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/column-gap">column-gap</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/column-rule">column-rule</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/column-rule-color">column-rule-color</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/column-rule-style">column-rule-style</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/column-rule-width">column-rule-width</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/column-span">column-span</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/column-width">column-width</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/columns">columns</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>contain-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/contain">contain</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/contain-intrinsic-block-size">contain-intrinsic-block-size</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/contain-intrinsic-height">contain-intrinsic-height</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/contain-intrinsic-inline-size">contain-intrinsic-inline-size</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/contain-intrinsic-size">contain-intrinsic-size</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/contain-intrinsic-width">contain-intrinsic-width</a>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>container-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/container">container</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/container-name">container-name</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/container-type">container-type</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/content">content</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/content-visibility">content-visibility</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>counter-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/counter-increment">counter-increment</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/counter-reset">counter-reset</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/counter-set">counter-set</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/cursor">cursor</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/direction">direction</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/display">display</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/empty-cells">empty-cells</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/filter">filter</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>flex-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/flex">flex</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/flex-basis">flex-basis</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/flex-direction">flex-direction</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/flex-flow">flex-flow</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/flex-grow">flex-grow</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/flex-shrink">flex-shrink</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/flex-wrap">flex-wrap</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/float">float</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>font-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/font">font</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/font-family">font-family</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/font-feature-settings">font-feature-settings</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/font-kerning">font-kerning</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/font-language-override">font-language-override</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/font-optical-sizing">font-optical-sizing</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/font-palette">font-palette</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/font-size">font-size</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/font-size-adjust">font-size-adjust</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/font-smooth">font-smooth</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/font-stretch">font-stretch</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/font-style">font-style</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/font-synthesis">font-synthesis</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/font-variant">font-variant</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/font-variant-alternates">font-variant-alternates</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/font-variant-caps">font-variant-caps</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/font-variant-east-asian">font-variant-east-asian</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/font-variant-emoji">font-variant-emoji</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/font-variant-ligatures">font-variant-ligatures</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/font-variant-numeric">font-variant-numeric</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/font-variant-position">font-variant-position</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/font-variation-settings">font-variation-settings</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/font-weight">font-weight</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/forced-color-adjust">forced-color-adjust</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/gap">gap</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>grid-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/grid">grid</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/grid-area">grid-area</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/grid-auto-columns">grid-auto-columns</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/grid-auto-flow">grid-auto-flow</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/grid-auto-rows">grid-auto-rows</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/grid-column">grid-column</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/grid-column-end">grid-column-end</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/grid-column-start">grid-column-start</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/grid-row">grid-row</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/grid-row-end">grid-row-end</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/grid-row-start">grid-row-start</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/grid-template">grid-template</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/grid-template-areas">grid-template-areas</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/grid-template-columns">grid-template-columns</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/grid-template-rows">grid-template-rows</a>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/hanging-punctuation">hanging-punctuation</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/height">height</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/hyphenate-character">hyphenate-character</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/hyphenate-limit-chars">hyphenate-limit-chars</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/hyphens">hyphens</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>image-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/image-orientation">image-orientation</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/image-rendering">image-rendering</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/image-resolution">image-resolution</a><abbr
+                                                    class="icon icon-experimental"
+                                                    title="Experimental. Expect behavior to change in the future.">
+                                                    <span class="visually-hidden">Experimental</span>
+                                                </abbr></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/initial-letter">initial-letter</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/initial-letter-align">initial-letter-align</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/inline-size">inline-size</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>inset-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/inset">inset</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/inset-block">inset-block</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/inset-block-end">inset-block-end</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/inset-block-start">inset-block-start</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/inset-inline">inset-inline</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/inset-inline-end">inset-inline-end</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/inset-inline-start">inset-inline-start</a>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/isolation">isolation</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>justify-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/justify-content">justify-content</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/justify-items">justify-items</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/justify-self">justify-self</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/justify-tracks">justify-tracks</a><abbr
+                                                    class="icon icon-experimental"
+                                                    title="Experimental. Expect behavior to change in the future.">
+                                                    <span class="visually-hidden">Experimental</span>
+                                                </abbr></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/left">left</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/letter-spacing">letter-spacing</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>line-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/line-break">line-break</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/line-height">line-height</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/line-height-step">line-height-step</a><abbr
+                                                    class="icon icon-experimental"
+                                                    title="Experimental. Expect behavior to change in the future.">
+                                                    <span class="visually-hidden">Experimental</span>
+                                                </abbr></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>list-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/list-style">list-style</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/list-style-image">list-style-image</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/list-style-position">list-style-position</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/list-style-type">list-style-type</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>margin-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/margin">margin</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/margin-block">margin-block</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/margin-block-end">margin-block-end</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/margin-block-start">margin-block-start</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/margin-bottom">margin-bottom</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/margin-inline">margin-inline</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/margin-inline-end">margin-inline-end</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/margin-inline-start">margin-inline-start</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/margin-left">margin-left</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/margin-right">margin-right</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/margin-top">margin-top</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/margin-trim">margin-trim</a><abbr
+                                                    class="icon icon-experimental"
+                                                    title="Experimental. Expect behavior to change in the future.">
+                                                    <span class="visually-hidden">Experimental</span>
+                                                </abbr></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>mask-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/mask">mask</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/mask-border">mask-border</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/mask-border-mode">mask-border-mode</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/mask-border-outset">mask-border-outset</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/mask-border-repeat">mask-border-repeat</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/mask-border-slice">mask-border-slice</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/mask-border-source">mask-border-source</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/mask-border-width">mask-border-width</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/mask-clip">mask-clip</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/mask-composite">mask-composite</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/mask-image">mask-image</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/mask-mode">mask-mode</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/mask-origin">mask-origin</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/mask-position">mask-position</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/mask-repeat">mask-repeat</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/mask-size">mask-size</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/mask-type">mask-type</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/masonry-auto-flow">masonry-auto-flow</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>math-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/math-depth">math-depth</a><abbr
+                                                    class="icon icon-experimental"
+                                                    title="Experimental. Expect behavior to change in the future.">
+                                                    <span class="visually-hidden">Experimental</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/math-shift">math-shift</a><abbr
+                                                    class="icon icon-experimental"
+                                                    title="Experimental. Expect behavior to change in the future.">
+                                                    <span class="visually-hidden">Experimental</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/math-style">math-style</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>max-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/max-block-size">max-block-size</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/max-height">max-height</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/max-inline-size">max-inline-size</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/max-width">max-width</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>min-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/min-block-size">min-block-size</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/min-height">min-height</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/min-inline-size">min-inline-size</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/min-width">min-width</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/mix-blend-mode">mix-blend-mode</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/object-fit">object-fit</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/object-position">object-position</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>offset-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/offset">offset</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/offset-anchor">offset-anchor</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/offset-distance">offset-distance</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/offset-path">offset-path</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/offset-position">offset-position</a><abbr
+                                                    class="icon icon-experimental"
+                                                    title="Experimental. Expect behavior to change in the future.">
+                                                    <span class="visually-hidden">Experimental</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/offset-rotate">offset-rotate</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/opacity">opacity</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/order">order</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/orphans">orphans</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>outline-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/outline">outline</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/outline-color">outline-color</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/outline-offset">outline-offset</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/outline-style">outline-style</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/outline-width">outline-width</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>overflow-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/overflow">overflow</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/overflow-anchor">overflow-anchor</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/overflow-block">overflow-block</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/overflow-clip-margin">overflow-clip-margin</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/overflow-inline">overflow-inline</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/overflow-wrap">overflow-wrap</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/overflow-x">overflow-x</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/overflow-y">overflow-y</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>overscroll-*</summary>
+                                        <ol>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/overscroll-behavior">overscroll-behavior</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/overscroll-behavior-block">overscroll-behavior-block</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/overscroll-behavior-inline">overscroll-behavior-inline</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/overscroll-behavior-x">overscroll-behavior-x</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/overscroll-behavior-y">overscroll-behavior-y</a>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>padding-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/padding">padding</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/padding-block">padding-block</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/padding-block-end">padding-block-end</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/padding-block-start">padding-block-start</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/padding-bottom">padding-bottom</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/padding-inline">padding-inline</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/padding-inline-end">padding-inline-end</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/padding-inline-start">padding-inline-start</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/padding-left">padding-left</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/padding-right">padding-right</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/padding-top">padding-top</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>page-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/page-break-after">page-break-after</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/page-break-before">page-break-before</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/page-break-inside">page-break-inside</a>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/paint-order">paint-order</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/perspective">perspective</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/perspective-origin">perspective-origin</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>place-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/place-content">place-content</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/place-items">place-items</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/place-self">place-self</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/pointer-events">pointer-events</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/position">position</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/print-color-adjust">print-color-adjust</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/quotes">quotes</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/resize">resize</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/right">right</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/rotate">rotate</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/row-gap">row-gap</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/ruby-align">ruby-align</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/ruby-position">ruby-position</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/scale">scale</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>scroll-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/scroll-behavior">scroll-behavior</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/scroll-margin">scroll-margin</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-margin-block">scroll-margin-block</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-margin-block-end">scroll-margin-block-end</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-margin-block-start">scroll-margin-block-start</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-margin-bottom">scroll-margin-bottom</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-margin-inline">scroll-margin-inline</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-margin-inline-end">scroll-margin-inline-end</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-margin-inline-start">scroll-margin-inline-start</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/scroll-margin-left">scroll-margin-left</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-margin-right">scroll-margin-right</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/scroll-margin-top">scroll-margin-top</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/scroll-padding">scroll-padding</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-padding-block">scroll-padding-block</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-padding-block-end">scroll-padding-block-end</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-padding-block-start">scroll-padding-block-start</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-padding-bottom">scroll-padding-bottom</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-padding-inline">scroll-padding-inline</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-padding-inline-end">scroll-padding-inline-end</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-padding-inline-start">scroll-padding-inline-start</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-padding-left">scroll-padding-left</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-padding-right">scroll-padding-right</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/scroll-padding-top">scroll-padding-top</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/scroll-snap-align">scroll-snap-align</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-snap-coordinate">scroll-snap-coordinate</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-snap-destination">scroll-snap-destination</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-snap-points-x">scroll-snap-points-x</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-snap-points-y">scroll-snap-points-y</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/scroll-snap-stop">scroll-snap-stop</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/scroll-snap-type">scroll-snap-type</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-snap-type-x">scroll-snap-type-x</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-snap-type-y">scroll-snap-type-y</a><abbr
+                                                    class="icon icon-nonstandard"
+                                                    title="Non-standard. Check cross-browser support before using.">
+                                                    <span class="visually-hidden">Non-standard</span>
+                                                </abbr><abbr class="icon icon-deprecated"
+                                                    title="Deprecated. Not for use in new websites.">
+                                                    <span class="visually-hidden">Deprecated</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/scroll-timeline">scroll-timeline</a><abbr
+                                                    class="icon icon-experimental"
+                                                    title="Experimental. Expect behavior to change in the future.">
+                                                    <span class="visually-hidden">Experimental</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-timeline-axis">scroll-timeline-axis</a><abbr
+                                                    class="icon icon-experimental"
+                                                    title="Experimental. Expect behavior to change in the future.">
+                                                    <span class="visually-hidden">Experimental</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/scroll-timeline-name">scroll-timeline-name</a><abbr
+                                                    class="icon icon-experimental"
+                                                    title="Experimental. Expect behavior to change in the future.">
+                                                    <span class="visually-hidden">Experimental</span>
+                                                </abbr></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>scrollbar-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/scrollbar-color">scrollbar-color</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/scrollbar-gutter">scrollbar-gutter</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/scrollbar-width">scrollbar-width</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>shape-*</summary>
+                                        <ol>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/shape-image-threshold">shape-image-threshold</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/shape-margin">shape-margin</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/shape-outside">shape-outside</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/tab-size">tab-size</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/table-layout">table-layout</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>text-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/text-align">text-align</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/text-align-last">text-align-last</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/text-combine-upright">text-combine-upright</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/text-decoration">text-decoration</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/text-decoration-color">text-decoration-color</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/text-decoration-line">text-decoration-line</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/text-decoration-skip">text-decoration-skip</a><abbr
+                                                    class="icon icon-experimental"
+                                                    title="Experimental. Expect behavior to change in the future.">
+                                                    <span class="visually-hidden">Experimental</span>
+                                                </abbr></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/text-decoration-skip-ink">text-decoration-skip-ink</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/text-decoration-style">text-decoration-style</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/text-decoration-thickness">text-decoration-thickness</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/text-emphasis">text-emphasis</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/text-emphasis-color">text-emphasis-color</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/text-emphasis-position">text-emphasis-position</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/text-emphasis-style">text-emphasis-style</a>
+                                            </li>
+                                            <li><a href="/en-US/docs/Web/CSS/text-indent">text-indent</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/text-justify">text-justify</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/text-orientation">text-orientation</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/text-overflow">text-overflow</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/text-rendering">text-rendering</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/text-shadow">text-shadow</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/text-size-adjust">text-size-adjust</a><abbr
+                                                    class="icon icon-experimental"
+                                                    title="Experimental. Expect behavior to change in the future.">
+                                                    <span class="visually-hidden">Experimental</span>
+                                                </abbr></li>
+                                            <li><a href="/en-US/docs/Web/CSS/text-transform">text-transform</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/text-underline-offset">text-underline-offset</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/text-underline-position">text-underline-position</a>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/top">top</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/touch-action">touch-action</a></li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>transform-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/transform">transform</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/transform-box">transform-box</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/transform-origin">transform-origin</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/transform-style">transform-style</a></li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li class="toggle">
+                                    <details>
+                                        <summary>transition-*</summary>
+                                        <ol>
+                                            <li><a href="/en-US/docs/Web/CSS/transition">transition</a></li>
+                                            <li><a href="/en-US/docs/Web/CSS/transition-delay">transition-delay</a></li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/transition-duration">transition-duration</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/transition-property">transition-property</a>
+                                            </li>
+                                            <li><a
+                                                    href="/en-US/docs/Web/CSS/transition-timing-function">transition-timing-function</a>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/translate">translate</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/unicode-bidi">unicode-bidi</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/user-modify">user-modify</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr><abbr class="icon icon-deprecated"
+                                        title="Deprecated. Not for use in new websites.">
+                                        <span class="visually-hidden">Deprecated</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/user-select">user-select</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/vertical-align">vertical-align</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/view-transition-name">view-transition-name</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/visibility">visibility</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/white-space">white-space</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/widows">widows</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/width">width</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/will-change">will-change</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/word-break">word-break</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/word-spacing">word-spacing</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/writing-mode">writing-mode</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/z-index">z-index</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/zoom">zoom</a><abbr class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Selectors</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/Attribute_selectors">Attribute selectors</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/Class_selectors">Class selectors</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/ID_selectors">ID selectors</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/Type_selectors">Type selectors</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/Universal_selectors">Universal selectors</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Combinators</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/Adjacent_sibling_combinator">Adjacent sibling
+                                        combinator</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/Child_combinator">Child combinator</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/Column_combinator">Column combinator</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/Descendant_combinator">Descendant combinator</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/General_sibling_combinator">General sibling
+                                        combinator</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/Selector_list">Selector list</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Pseudo-classes</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-broken">:-moz-broken</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-drag-over">:-moz-drag-over</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-first-node">:-moz-first-node</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-focusring">:-moz-focusring</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-handler-blocked">:-moz-handler-blocked</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-handler-crashed">:-moz-handler-crashed</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-handler-disabled">:-moz-handler-disabled</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-last-node">:-moz-last-node</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-list-bullet">::-moz-list-bullet</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-list-number">::-moz-list-number</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-loading">:-moz-loading</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-locale-dir_ltr">:-moz-locale-dir(ltr)</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-locale-dir_rtl">:-moz-locale-dir(rtl)</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-only-whitespace">:-moz-only-whitespace</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-submit-invalid">:-moz-submit-invalid</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-suppressed">:-moz-suppressed</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-user-disabled">:-moz-user-disabled</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:-moz-window-inactive">:-moz-window-inactive</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:active">:active</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:any-link">:any-link</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:autofill">:autofill</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:blank">:blank</a><abbr class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:checked">:checked</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:current">:current</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:default">:default</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:defined">:defined</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:dir">:dir()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:disabled">:disabled</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:empty">:empty</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:enabled">:enabled</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:first">:first</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:first-child">:first-child</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:first-of-type">:first-of-type</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:focus">:focus</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:focus-visible">:focus-visible</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:focus-within">:focus-within</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:fullscreen">:fullscreen</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:future">:future</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:has">:has()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:host">:host</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:host-context">:host-context()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:host_function">:host()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:hover">:hover</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:in-range">:in-range</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:indeterminate">:indeterminate</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:invalid">:invalid</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:is">:is()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:lang">:lang()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:last-child">:last-child</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:last-of-type">:last-of-type</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:left">:left</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:link">:link</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:local-link">:local-link</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:modal">:modal</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:not">:not()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:nth-child">:nth-child()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:nth-col">:nth-col()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:nth-last-child">:nth-last-child()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:nth-last-col">:nth-last-col()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:nth-last-of-type">:nth-last-of-type()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:nth-of-type">:nth-of-type()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:only-child">:only-child</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:only-of-type">:only-of-type</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:optional">:optional</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:out-of-range">:out-of-range</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:past">:past</a><abbr class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:paused">:paused</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:picture-in-picture">:picture-in-picture</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:placeholder-shown">:placeholder-shown</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:playing">:playing</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:read-only">:read-only</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:read-write">:read-write</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:required">:required</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:right">:right</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:root">:root</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:scope">:scope</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:target">:target</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:target-within">:target-within</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:user-invalid">:user-invalid
+                                        (:-moz-ui-invalid)</a><abbr class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:user-valid">:user-valid (:-moz-ui-valid)</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/:valid">:valid</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:visited">:visited</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/:where">:where()</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Pseudo-elements</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/::-moz-color-swatch">::-moz-color-swatch</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::-moz-focus-inner">::-moz-focus-inner</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::-moz-page">::-moz-page</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::-moz-page-sequence">::-moz-page-sequence</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::-moz-progress-bar">::-moz-progress-bar</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::-moz-range-progress">::-moz-range-progress</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::-moz-range-thumb">::-moz-range-thumb</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::-moz-range-track">::-moz-range-track</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/::-moz-scrolled-page-sequence">::-moz-scrolled-page-sequence</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/::-webkit-inner-spin-button">::-webkit-inner-spin-button</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::-webkit-meter-bar">::-webkit-meter-bar</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/::-webkit-meter-even-less-good-value">::-webkit-meter-even-less-good-value</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/::-webkit-meter-inner-element">::-webkit-meter-inner-element</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/::-webkit-meter-optimum-value">::-webkit-meter-optimum-value</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/::-webkit-meter-suboptimum-value">::-webkit-meter-suboptimum-value</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/::-webkit-outer-spin-button">::-webkit-outer-spin-button</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::-webkit-progress-bar">::-webkit-progress-bar</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/::-webkit-progress-inner-element">::-webkit-progress-inner-element</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/::-webkit-progress-value">::-webkit-progress-value</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::-webkit-scrollbar">::-webkit-scrollbar</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/::-webkit-search-cancel-button">::-webkit-search-cancel-button</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/::-webkit-search-results-button">::-webkit-search-results-button</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/::-webkit-slider-runnable-track">::-webkit-slider-runnable-track</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::-webkit-slider-thumb">::-webkit-slider-thumb</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::after">::after</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/::backdrop">::backdrop</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/::before">::before</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/::cue">::cue</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/::cue-region">::cue-region</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/::file-selector-button">::file-selector-button</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/::first-letter">::first-letter</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/::first-line">::first-line</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/::grammar-error">::grammar-error</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::highlight">::highlight()</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::marker">::marker</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/::part">::part()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/::placeholder">::placeholder</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/::selection">::selection</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/::slotted">::slotted()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/::spelling-error">::spelling-error</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::target-text">::target-text</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::view-transition">::view-transition</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/::view-transition-group">::view-transition-group</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/::view-transition-image-pair">::view-transition-image-pair</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::view-transition-new">::view-transition-new</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/::view-transition-old">::view-transition-old</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>At-rules</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/@charset">@charset</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/@color-profile">@color-profile</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/@container">@container</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/@counter-style">@counter-style</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/@document">@document</a><abbr
+                                        class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr><abbr class="icon icon-deprecated"
+                                        title="Deprecated. Not for use in new websites.">
+                                        <span class="visually-hidden">Deprecated</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/@font-face">@font-face</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/@font-feature-values">@font-feature-values</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/@font-palette-values">@font-palette-values</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/@import">@import</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/@keyframes">@keyframes</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/@layer">@layer</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/@media">@media</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/@namespace">@namespace</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/@page">@page</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/@property">@property</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/@supports">@supports</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Functions</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/-moz-image-rect">-moz-image-rect</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr><abbr class="icon icon-nonstandard"
+                                        title="Non-standard. Check cross-browser support before using.">
+                                        <span class="visually-hidden">Non-standard</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/abs">abs()</a><abbr class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/acos">acos()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/asin">asin()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/atan">atan()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/atan2">atan2()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/attr">attr()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/calc">calc()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/clamp">clamp()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/cos">cos()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/counter">counter()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/counters">counters()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/cross-fade">cross-fade()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/element">element()</a><abbr
+                                        class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/env">env()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/exp">exp()</a><abbr class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/fit-content_function">fit-content()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/hypot">hypot()</a><abbr class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/log">log()</a><abbr class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/max">max()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/min">min()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/minmax">minmax()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/mod">mod()</a><abbr class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/path">path()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/pow">pow()</a><abbr class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/rem">rem()</a><abbr class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/repeat">repeat()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/round">round()</a><abbr class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/sign">sign()</a><abbr class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/sin">sin()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/sqrt">sqrt()</a><abbr class="icon icon-experimental"
+                                        title="Experimental. Expect behavior to change in the future.">
+                                        <span class="visually-hidden">Experimental</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/symbols">symbols()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/tan">tan()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/url">url()</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/var">var()</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Types</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/alpha-value">&lt;alpha-value&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/angle">&lt;angle&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/angle-percentage">&lt;angle-percentage&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/basic-shape">&lt;basic-shape&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/blend-mode">&lt;blend-mode&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/calc-constant">&lt;calc-constant&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/calc-sum">&lt;calc-sum&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/color_value">&lt;color&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/custom-ident">&lt;custom-ident&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/dashed-ident">&lt;dashed-ident&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/dimension">&lt;dimension&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/display-box">&lt;display-box&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/display-inside">&lt;display-inside&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/display-internal">&lt;display-internal&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/display-legacy">&lt;display-legacy&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/display-listitem">&lt;display-listitem&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/display-outside">&lt;display-outside&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/easing-function">&lt;easing-function&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/filter-function">&lt;filter-function&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/flex_value">&lt;flex&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/frequency">&lt;frequency&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/frequency-percentage">&lt;frequency-percentage&gt;</a>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/gradient">&lt;gradient&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/hex-color">&lt;hex-color&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/ident">&lt;ident&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/image">&lt;image&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/integer">&lt;integer&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/length">&lt;length&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/length-percentage">&lt;length-percentage&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/named-color">&lt;named-color&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/number">&lt;number&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/percentage">&lt;percentage&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/position_value">&lt;position&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/ratio">&lt;ratio&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/resolution">&lt;resolution&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/shape">&lt;shape&gt;</a><abbr
+                                        class="icon icon-deprecated" title="Deprecated. Not for use in new websites.">
+                                        <span class="visually-hidden">Deprecated</span>
+                                    </abbr></li>
+                                <li><a href="/en-US/docs/Web/CSS/string">&lt;string&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/system-color">&lt;system-color&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/time">&lt;time&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/time-percentage">&lt;time-percentage&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/transform-function">&lt;transform-function&gt;</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/translation-value">&lt;translation-value&gt;</a></li>
+                            </ol>
+                        </details>
+                    </li>
+
+                    <li><strong>Guides</strong></li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Animations</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">Using CSS
+                                        animations</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Backgrounds and Borders</summary>
+                            <ol>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Using_multiple_backgrounds">Using
+                                        multiple backgrounds</a></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images">Resizing
+                                        background images</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Box alignment</summary>
+                            <ol>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/CSS_Box_Alignment/Box_Alignment_In_Block_Abspos_Tables">Box
+                                        alignment in block layout</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Box_Alignment/Box_Alignment_in_Flexbox">Box
+                                        alignment in flexbox</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Box_Alignment/Box_Alignment_In_Grid_Layout">Box
+                                        alignment in grid layout</a></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/CSS_Box_Alignment/Box_Alignment_in_Multi-column_Layout">Box
+                                        alignment in multi-column layout</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Box model</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">Introduction
+                                        to the CSS basic box model</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing">Mastering
+                                        margin collapsing</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Columns</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Columns/Basic_Concepts_of_Multicol">Basic concepts
+                                        of Multicol</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Columns/Styling_Columns">Styling columns</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Columns/Spanning_Columns">Spanning and
+                                        balancing</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Columns/Handling_Overflow_in_Multicol">Handling
+                                        overflow in Multicol</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Columns/Handling_content_breaks_in_multicol">Content
+                                        breaks in Multicol</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Conditional rules</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Conditional_Rules/Using_Feature_Queries">Using
+                                        feature queries</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>CSSOM view</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/CSSOM_View/Coordinate_systems">Coordinate systems</a>
+                                </li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Flexbox</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Basic
+                                        concepts of Flexbox</a></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Relationship_of_Flexbox_to_Other_Layout_Methods">Comparison
+                                        with other layout methods</a></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container">Aligning
+                                        items in a flex container</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items">Ordering
+                                        flex items</a></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax">Controlling
+                                        flex item ratios</a></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items">Mastering
+                                        wrapping of flex items</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox">Typical
+                                        use cases of Flexbox</a></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Backwards_Compatibility_of_Flexbox">Backwards
+                                        compatibility of Flexbox</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Flow layout</summary>
+                            <ol>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inline_Layout_in_Normal_Flow">Block
+                                        and Inline layout in normal flow</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Flow_Layout/In_Flow_and_Out_of_Flow">In flow and
+                                        Out of flow</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Flow_Layout/Intro_to_formatting_contexts">Formatting
+                                        contexts explained</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Flow_Layout/Flow_Layout_and_Writing_Modes">Flow
+                                        layout and writing modes</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Flow_Layout/Flow_Layout_and_Overflow">Flow layout
+                                        and overflow</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Fonts</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Fonts/OpenType_fonts_guide">OpenType font features
+                                        guide</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide">Variable fonts
+                                        guide</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Grid</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">Basics
+                                        concepts of grid layout</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout">Relationship
+                                        to other layout methods</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid">Line-based
+                                        placement</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas">Grid template
+                                        areas</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines">Layout
+                                        using named grid lines</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout">Auto-placement
+                                        in grid layout</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout">Box
+                                        alignment in grid layout</a></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Logical_Values_and_Writing_Modes">Grids,
+                                        logical values and writing modes</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Layout_and_Accessibility">Grid
+                                        layout and accessibility</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_and_Progressive_Enhancement">Grid
+                                        Layout and progressive enhancement</a></li>
+                                <li><a
+                                        href="/en-US/docs/Web/CSS/CSS_Grid_Layout/Realizing_common_layouts_using_CSS_Grid_Layout">Realizing
+                                        common layouts using grids</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Grid_Layout/Subgrid">Subgrid</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Grid_Layout/Masonry_Layout">Masonry layout</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Images</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients">Using CSS gradients</a>
+                                </li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Lists and counters</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters">Using CSS
+                                        counters</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation">Consistent
+                                        list indentation</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Logical properties</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Logical_Properties/Basic_concepts">Basic
+                                        concepts</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Logical_Properties/Floating_and_positioning">Floating
+                                        and positioning</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Logical_Properties/Margins_borders_padding">Margins,
+                                        borders and padding</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Logical_Properties/Sizing">Sizing</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Media queries</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">Using media
+                                        queries</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/Media_Queries/Using_Media_Queries_for_Accessibility">Using
+                                        media queries for accessibility</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/Media_Queries/Testing_media_queries">Testing media
+                                        queries programmatically</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Positioning</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index">Understanding
+                                        CSS z-index</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Scroll snap</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Scroll_Snap/Basic_concepts">Basic concepts of
+                                        scroll snap</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Shapes</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Shapes/Overview_of_CSS_Shapes">Overview of
+                                        shapes</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Shapes/From_box_values">Shapes from box values</a>
+                                </li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Shapes/Basic_Shapes">Basic shapes</a></li>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Shapes/Shapes_From_Images">Shapes from images</a>
+                                </li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Text</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Text/Wrapping_Text">Wrapping and breaking text</a>
+                                </li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Transforms</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Transforms/Using_CSS_transforms">Using
+                                        transforms</a></li>
+                            </ol>
+                        </details>
+                    </li>
+                    <li class="toggle">
+                        <details>
+                            <summary>Transitions</summary>
+                            <ol>
+                                <li><a href="/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">Using
+                                        transitions</a></li>
+                            </ol>
+                        </details>
+                    </li>
+
+                    <li><a href="/en-US/docs/Web/CSS/Layout_cookbook"><strong>Layout cookbook</strong></a></li>
+                    <li class="toggle">
+                        <ol>
+                            <li><a href="/en-US/docs/Web/CSS/Layout_cookbook/Media_objects">Media objects</a></li>
+                            <li><a href="/en-US/docs/Web/CSS/Layout_cookbook/Column_layouts">Columns</a></li>
+                            <li><a href="/en-US/docs/Web/CSS/Layout_cookbook/Center_an_element">Center an element</a>
+                            </li>
+                            <li><a href="/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers">Sticky footers</a></li>
+                            <li><a href="/en-US/docs/Web/CSS/Layout_cookbook/Split_Navigation">Split navigation</a></li>
+                            <li><a href="/en-US/docs/Web/CSS/Layout_cookbook/Breadcrumb_Navigation">Breadcrumb
+                                    navigation</a></li>
+                            <li><a href="/en-US/docs/Web/CSS/Layout_cookbook/List_group_with_badges">List group with
+                                    badges</a></li>
+                            <li><a href="/en-US/docs/Web/CSS/Layout_cookbook/Pagination">Pagination</a></li>
+                            <li><a href="/en-US/docs/Web/CSS/Layout_cookbook/Card">Card</a></li>
+                            <li><a href="/en-US/docs/Web/CSS/Layout_cookbook/Grid_wrapper">Grid wrapper</a></li>
+                        </ol>
+                    </li>
+
+                    <li><strong>Tools</strong></li>
+                    <li class="toggle">
+                        <ol>
+                            <li><a href="/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool">Color picker</a></li>
+                            <li><a href="/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Box-shadow_generator">Box
+                                    shadow generator</a></li>
+                            <li><a href="/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Border-image_generator">Border
+                                    image generator</a></li>
+                        </ol>
+                    </li>
+
+                </ol>
+            </div>
+        </nav>
+    </aside>
+
+</body>
+</html>
